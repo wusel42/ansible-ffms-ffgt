@@ -746,18 +746,10 @@ ff_network:
   v6_network: 2a03:2260:115::/48
 
 administratorenteam:
-  - "parad0x"
-  - "kgbvax"
-  - "descilla"
-  - "mpw"
-  - "corny"
-  - "peterb"
-  - "alucardo"
-  - "fll"
-  - "p4w"
-  - "hoepers"
-  - "wurmi"
-  - "robwei"
+  - "collimas"
+  - "cord"
+  - "frosty-geek"
+  - "wusel"
 
 bind:
   ffnet_zone_type: slave
