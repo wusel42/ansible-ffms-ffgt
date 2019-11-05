@@ -1,5 +1,6 @@
 # Globale Variablen für alle Server
 build_tunnels_over_ipv6_if_available: false
+use_wlan_slovenija_tunneldigger: true
 
 domaenen:
   "01":

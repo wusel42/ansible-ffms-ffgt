@@ -19,7 +19,6 @@ domaenenliste:
       dhcp_ende: 10.255.143.254
       server_id: 5
 
-use_wlan_slovenija_tunneldigger: true
 fastd: true
 
 #tunneldigger:
