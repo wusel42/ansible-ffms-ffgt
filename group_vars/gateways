@@ -7,10 +7,9 @@ collectd:
   collect_bind: false
   collect_ping: true
   graphite_target:
-    host: "stats.{{freifunk.domain}}"
+    host: 193.26.120.252
     port: 2003
 
-#dhcp_type: "kea"
 dhcp_type: "isc-dhcp"
 
 kea:
@@ -53,11 +52,16 @@ kea:
 
 tunneldigger:
   instance_per_domain: true
-  interface: "eth0"
+  interface: "ens3"
   max_tunnels: 1024
-  port_base: 20100
+  # td-internal port base
+  port_base: 20000
+  # td control-port (external rendevous port), + domain number
+  control_port: 10000
   pmtu_discovery: false
   tunnel_timeout: 60
+
+#batman_version: "2013.4.0"
 
 fastd:
   port_base: 10000
