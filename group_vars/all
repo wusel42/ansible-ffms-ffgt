@@ -206,6 +206,10 @@ hostname_suffix: ".4830.org"
 #  ffnet_zone_masters:
 #    - 176.9.38.163
 
+bind_zonemaster:
+  server: dns-gut.4830.org
+  email: info.freifunk-kreisgt.de
+
 logrotate:
   cycle: daily
   count: 3
