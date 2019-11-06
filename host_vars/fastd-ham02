@@ -29,4 +29,7 @@ domaenenliste:
 #  pmtu_discovery: false
 #  tunnel_timeout: 60
 
-batman_version: "2013.4.0"
+batman:
+  downstream: 1024Mbit
+  upstream: 1024Mbit
+  version: "2013.4.0"
