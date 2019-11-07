@@ -196,7 +196,6 @@ ff_network:
   v6_network: 2001:bf7::/32
 
 administratorenteam:
-  - "collimas"
   - "cord"
   - "frosty-geek"
   - "wusel"
@@ -218,14 +217,16 @@ logrotate:
 
 freifunk:
   name: "Freifunk Kreis GT"
-  kurzname: "ffgt"
+  kurzname: "4830.org"
   search_domain: "4830.org"
   email: info@freifunk-kreisgt.de
   domain: 4830.org
 
 nameservers:
-- "1.1.1.1"
-- "1.0.0.1"
+# FoeBud
+- "85.214.20.141"
+# dnscache.berlin.ccc.de
+- "213.73.91.35"
 - "2606:4700:4700::1111"
 - "2606:4700:4700::1001"
 

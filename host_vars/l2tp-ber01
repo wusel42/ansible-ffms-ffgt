@@ -11,6 +11,8 @@ ospf_nat_instanceid: 10
 ospf_nat_area: 10
 ospf_nat_interface: ens3
 
+dhcp_type: "isc-dhcp"
+
 domaenenliste:
    "01":
       dhcp_start: 10.234.128.16

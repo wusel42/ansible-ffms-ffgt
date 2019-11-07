@@ -60,7 +60,5 @@ tunneldigger:
   pmtu_discovery: false
   tunnel_timeout: 60
 
-#batman_version: "2013.4.0"
-
-fastd:
-  port_base: 10000
+#fastd:
+#  port_base: 10000
