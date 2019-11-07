@@ -34,5 +34,7 @@ batman:
   upstream: 1024Mbit
   version: "2013.4.0"
 
-  fastd:
+fastd:
   mtu: 1426
+  port_base: 10000
+

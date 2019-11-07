@@ -36,3 +36,5 @@ batman:
 
 fastd:
   mtu: 1426
+  port_base: 10000
+
