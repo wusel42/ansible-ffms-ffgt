@@ -14,7 +14,7 @@ ospf_instanceid: 10
 #ospf_nat_interface: ens3
 
 domaenenliste:
-   "00":
+   "99":
       dhcp_start: 10.255.140.16
       dhcp_ende: 10.255.143.254
       server_id: 5

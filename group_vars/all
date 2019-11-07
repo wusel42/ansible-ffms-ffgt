@@ -143,7 +143,7 @@ domaenen:
     main_url: https://freifunk-kreisgt.de/
     forum_url: https://forum.freifunk-kreisgt.de/
     firmware_url: http://firmware.4830.org/
-  "00":
+  "99":
     name: Legacy FFGT
     community: Legacy Freifunk by 4830.org
     site_code: "fff"
