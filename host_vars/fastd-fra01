@@ -1,5 +1,5 @@
-vm_id: 3
-server_id: 3
+vm_id: 1
+server_id: 2 
 
 server_besitzer: "Freifunk Kreis GT"
 hoster: "4830.org"
@@ -17,7 +17,7 @@ domaenenliste:
    "99":
       dhcp_start: 10.255.140.16
       dhcp_ende: 10.255.143.254
-      server_id: 3
+      server_id: 2
       fastd: true
 
 #tunneldigger:

@@ -1,5 +1,5 @@
-vm_id: 2
-server_id: 2
+vm_id: 5
+server_id:6 
 
 server_besitzer: "Freifunk Kreis GT"
 hoster: "4830.org"
@@ -17,31 +17,31 @@ domaenenliste:
    "01":
       dhcp_start: 10.234.137.16
       dhcp_ende: 10.234.143.250
-      server_id: 2
+      server_id: 6 
    "02":
       dhcp_start: 10.234.168.16
       dhcp_ende: 10.234.175.250
-      server_id: 2
+      server_id: 6 
    "03":
       dhcp_start: 10.234.184.16
       dhcp_ende: 10.234.191.250
-      server_id: 2
+      server_id: 6
    "04":
       dhcp_start: 10.234.152.16
       dhcp_ende: 10.234.159.250
-      server_id: 2
+      server_id: 6
    "05":
       dhcp_start: 10.234.196.16
       dhcp_ende: 10.234.199.250
-      server_id: 2
+      server_id: 6
    "06":
       dhcp_start: 10.234.68.16
       dhcp_ende: 10.234.71.250
-      server_id: 2
+      server_id: 6
    "00":
       dhcp_start: 10.255.128.16
       dhcp_ende: 10.255.135.250
-      server_id: 2
+      server_id: 6
 
 use_wlan_slovenija_tunneldigger: true
 
