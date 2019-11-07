@@ -1,18 +1,22 @@
 # Allgemeine Infrastruktur-Server
-[common]
+#[common]
 #nextcloud		ansible_ssh_host=185.197.132.147	ansible_ssh_port=22
 
 [hypervisors]
-#fanLinvirthost		ansible_ssh_host=	TODO		ansible_ssh_port=22	# Kein Zugriff!
-#hyperhost		ansible_ssh_host=	TODO		ansible_ssh_port=22	# Kein Zugriff!
-#deshyper-01		ansible_ssh_host=5.9.86.151		ansible_ssh_port=22
-#remue			ansible_ssh_host=144.76.30.226		ansible_ssh_port=22
-#hypercorn		ansible_ssh_host=144.76.69.37		ansible_ssh_port=22	# Kein Zugriff!
-#unimatrixzero		ansible_ssh_host=176.9.38.150		ansible_ssh_port=22
-#voyager			ansible_ssh_host=46.4.80.179		ansible_ssh_port=22
-#tj7-hyper		ansible_ssh_host=176.9.77.90		ansible_ssh_port=22	# Kein Zugriff!
-#robweisor-01		ansible_ssh_host=78.46.85.242		ansible_ssh_port=22	# Kein Zugriff!
-#goldelse		ansible_ssh_host=217.197.83.217		ansible_ssh_port=22
+adarga       ipv4=192.251.226.124  ipv6=2a06:e881:1700:1::c0fb:e27c   ansible_ssh_port=22
+bellicose    ipv4=192.251.226.123  ipv6=2a06:e881:1700:1::c0fb:e27b   ansible_ssh_port=22
+blackstar    ipv4=217.197.83.189   ipv6=2001:bf0:c000:40::189         ansible_ssh_port=22
+brick        ipv4=185.133.208.75   ipv6=2a07:59c6:ee00::74            ansible_ssh_port=22
+chimaera     ipv4=213.128.133.185                                     ansible_ssh_port=22
+colosses     ipv4=192.251.226.116  ipv6=2a06:e881:1700:1:636f:6c6f:7373:6573  ansible_ssh_port=22
+inflexible   ipv4=192.251.226.110  ipv6=2a06:e881:1700:1:696e:666c:6578:6962  ansible_ssh_port=22
+moist        ipv4=193.26.120.246   ipv6=2a06:e881:2604:42::1          ansible_ssh_port=22
+nihil        ipv4=192.251.226.8    ipv6=2a06:e881:1700:1::c0fb:e208   ansible_ssh_port=22
+relentless   ipv4=192.251.226.9    ipv6=2a06:e881:1700:1::c0fb:e209   ansible_ssh_port=22
+thunderflare ipv4=192.251.226.111  ipv6=2a06:e881:1700:1:7468:756e:6465:7266  ansible_ssh_port=22
+tiffany      ipv4=136.243.22.43    ipv6=2a01:4f8:211:132a::2          ansible_ssh_port=22
+tolliver     ipv4=94.142.240.37    ipv6=2a02:898:0:20::203:1          ansible_ssh_port=22
+vanguard     ipv4=192.251.226.28   ipv6=2a06:e881:1700:1::c0fb:e21c   ansible_ssh_port=22
 
 # Server für Hoppglas Karten
 [mapserver]
@@ -20,10 +24,10 @@ map-tmp 		ipv4=193.26.120.249	ipv6=2a06:e881:1708:42:400:c1ff:fe1a:78f9	ansible_
 
 # Server für Statistiken mittels Graphite und Grafana
 [statistics]
-stats-tmp		ansible_ssh_host=193.26.120.249	ansible_ssh_port=22
+stats-tmp		ipv4=193.26.120.249	ipv6=2a06:e881:1708:42:400:c1ff:fe1a:78f9  ansible_ssh_host="{{ipv4}}"  ansible_ssh_port=22
 
 # Server die diverse Dienste anbieten.
-[dienste]
+#[dienste]
 #webserver		ansible_ssh_host=46.4.80.179		ansible_ssh_port=223
 #ticket			ansible_ssh_host=5.9.86.151		ansible_ssh_port=223
 #dnsmaster		ansible_ssh_host=176.9.38.163		ansible_ssh_port=22
@@ -44,21 +48,23 @@ stats-tmp		ansible_ssh_host=193.26.120.249	ansible_ssh_port=22
 #corny			ipv4=144.76.69.56	ipv6=2a01:4f8:191:8224::56		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> FFRL	capacity=1.00	server=hypercorn
 #automatix		ipv4=46.4.80.184	ipv6=2a01:4f8:140:616e::82		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> BCKB	capacity=1.00	server=voyager
 #hulk			ipv4=185.197.132.145	ipv6=2001:678:894:aa::2			ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> BCKB	capacity=1.00	server=goldelse
-fastd-ham02     ipv4=193.26.120.116     ipv6=2a06:e881:1702:1:400:c1ff:fe1a:7874 ansible_ssh_host="{{ipv4}}" ansible_ssh_port=22
-fastd-fra01     ipv4=193.26.120.235     ipv6=2a06:e881:1707:1:400:c1ff:fe1a:78eb ansible_ssh_host="{{ipv4}}" ansible_ssh_port=22
+fastd-ham02     ipv4=193.26.120.116     ipv6=2a06:e881:1702:1:400:c1ff:fe1a:7874   ansible_ssh_host="{{ipv4}}" ansible_ssh_port=22
+fastd-fra01     ipv4=193.26.120.235     ipv6=2a06:e881:1707:1:400:c1ff:fe1a:78eb   ansible_ssh_host="{{ipv4}}" ansible_ssh_port=22
+l2tp-ham02      ipv4=193.26.120.245     ipv6=2a06:e881:2604:42:400:c1ff:fe1a:78f5  ansible_ssh_host="{{ipv4}}" ansible_ssh_port=22
+fastd-gut01     ipv4=192.251.226.101    ipv6=2a06:e881:1700:1:400:c0ff:fefb:e265   ansible_ssh_host="{{ipv4}}" ansible_ssh_port=22
 
 # Server zum bauen und bereitstellen der Firmware
-[firmwareserver]
+#[firmwareserver]
 #firmware		ansible_ssh_host=144.76.30.226		ansible_ssh_port=223
 #build			ansible_ssh_host=2a03:2260:115:1000:215:17ff:fefd:4da4		ansible_ssh_port=22
 
 # Server der ein Monitoring mittels icinga zur verfügung stellt.
 [monitoring]
-icinga			ansible_ssh_host=193.26.120.232	ansible_ssh_port=22
+icinga			ipv4=193.26.120.232	ipv6=2a06:e881:1707:1:400:c1ff:fe1a:78e8  ansible_ssh_host="{{ipv4}}"  ansible_ssh_port=22
 
-[monitoringsatellites]
+#[monitoringsatellites]
 #remue
 #satellite-01		ansible_ssh_host=234.234.234.234	ansible_ssh_port=22
 
-[vipnodes]
+#[vipnodes]
 #vip-node-dummy-01	ansible_ssh_host=123.123.123.123	ansible_ssh_port=22
