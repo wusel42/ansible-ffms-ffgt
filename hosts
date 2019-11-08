@@ -20,7 +20,8 @@ vanguard     ipv4=192.251.226.28   ipv6=2a06:e881:1700:1::c0fb:e21c   ansible_ss
 
 # Server für Hoppglas Karten
 [mapserver]
-map-tmp 		ipv4=193.26.120.249	ipv6=2a06:e881:1708:42:400:c1ff:fe1a:78f9	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22
+#map-tmp 		ipv4=193.26.120.249	ipv6=2a06:e881:1708:42:400:c1ff:fe1a:78f9	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22
+newmap          ipv4=193.26.120.122 ipv6=2a06:e881:1702:1:400:c1ff:fe1a:787a  ansible_ssh_host="{{ipv4}}"  ansible_ssh_port=22
 
 # Server für Statistiken mittels Graphite und Grafana
 [statistics]
